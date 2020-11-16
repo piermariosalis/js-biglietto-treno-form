@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <section id="ticket-calc">
+    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <div class="card-rounded">
+      <div class="row">
+        <div class="col">
+          <label for="name">Nome e Cognome</label>
+          <input type="text" name="name" id="full-name">
+        </div>
+        <div class="col">
+          <label for="km">Km da percorrere</label>
+          <input type="number" name="km" id="km">
+
+        </div>
+        <div class="col">
+          <label for="fascia_età">Fascia di Età</label>
+          <select name="età" id="età">
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over65">Over 65</option>
+
+          </select>
+
+        </div>
+      </div>
+      <div class="row">
+        <button id="btn-genera">Genera</button>
+        <button id="btn-annulla">Annulla</button>
+      </div>
+    </div>
+  </section>
+  <!-- /#ticket-calc -->
+
+
+  <section id="ticket">
+    <h2>BIGLIETTO</h2>
+
+    <div id="passenger"></div>
+    <div id="discount-applied"></div>
+    <div id="carrozza"></div>
+    <div id="cp"></div>
+    <div id="ticket-price"></div>
+
+
+  </section>
+  <!-- /#ticket -->
+
+
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
